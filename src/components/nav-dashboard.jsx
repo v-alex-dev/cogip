@@ -1,28 +1,32 @@
 import HamburgerMenu from "./hamburger-menu.jsx";
 import Avatar from "./avatar.jsx";
 import {motion} from "framer-motion";
+import dashboardImg from "../assets/Icon_dashboard.svg";
+import invoicesImg from "../assets/Icon_Invoices.svg";
+import companiesImg from "../assets/Icon_Companies.svg";
+import contactImg from "../assets/Icon_contact.svg";
 
 const navDashboard = () => {
     const listNav = [
         {
             url: '/dashboard',
             content: 'Dashboard',
-            img: './src/assets/Icon_dashboard.svg'
+            img: dashboardImg
         },
         {
             url: '/dashboard/new-invoice',
             content: 'Invoices',
-            img: './src/assets/Icon_Invoices.svg'
+            img: invoicesImg
         },
         {
             url: '/dashboard/new-company',
             content: 'Companies',
-            img:'./src/assets/Icon_Companies.svg'
+            img: companiesImg
         },
         {
             url: '/dashboard/new-contact',
             content: 'Contacts',
-            img:'./src/assets/Icon_contact.svg'
+            img: contactImg
         },
     ];
     return (
