@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;500;700&family=Inter:wght@300;500;700;900&family=Roboto:wght@400;500;900&display=swap');
+
+
+@layer tailwind-base, primereact, tailwind-utilities;
+
+@layer tailwind-base {
+    @tailwind base;
+}
+
+@layer tailwind-utilities {
+    @tailwind components;
+    @tailwind utilities;
+}
+
+.btn-link-default{
+    @apply text-center px-2 py-1 flex items-center
+}
+
+.p-datatable-thead {
+    @apply bg-yellow px-3
+}
+
+.p-column-header-content {
+    @apply p-4
+}
+.p-paginator-bottom{
+    @apply mt-8
+}
+.p-paginator-pages, .p-paginator-element{
+    @apply mx-2 p-1
+}
+
+
+td{
+     @apply p-2
+ }
+
+#main-table tr:nth-child(even){
+    @apply bg-gray-100
+}
+
