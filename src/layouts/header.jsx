@@ -2,7 +2,7 @@ import NavHeader from "../components/nav-header.jsx";
 import {useEffect, useState} from "react";
 import {useIsHome} from "../hooks/useIsHome.jsx";
 import {motion} from "framer-motion";
-
+import managerSVG from "../assets/DrawKit_Vector_Illustration_Project_Manager.svg";
 
 const Header = () => {
     const home = useIsHome();
@@ -33,7 +33,7 @@ const Header = () => {
                                 type: 'spring',
                                 ease: 'easeIn'
                             }}
-                            className={"w-1/2"} src={"/src/assets/DrawKit_Vector_Illustration_Project_Manager.svg"}
+                            className={"w-1/2"} src={managerSVG}
                              alt={"projectManager"}/>
                     </div>
                 )}
